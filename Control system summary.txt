@@ -1,0 +1,11 @@
+Control system summary
+
+- Get commanded position/velocity from USB/UART/CAN
+- Update encoder counts, current measurement
+- PID control for commanded position/velocity, clamping at a max speed, acceleration, and jerk
+- Output of command PID is the input to FOC control
+	- Use rotor position to obtain D and Q components (Clarke and Park)
+	- Torque Q PI control input = commanded torque - Q component
+	- Torque D PI control input = 0 - D component
+	- Use outputs of Q and D PI controllers to obtain output voltages (Inverse Park and Clarke)
+- Set output voltages obatined using FOC
