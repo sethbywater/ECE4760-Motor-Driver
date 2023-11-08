@@ -1,12 +1,12 @@
 %TF.GenerationSoftware,KiCad,Pcbnew,(7.0.0)*%
-%TF.CreationDate,2023-10-30T13:55:29-04:00*%
+%TF.CreationDate,2023-11-06T15:13:21-05:00*%
 %TF.ProjectId,ECE4760 Motor Driver,45434534-3736-4302-904d-6f746f722044,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Copper,L4,Inr*%
 %TF.FilePolarity,Positive*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW (7.0.0)) date 2023-10-30 13:55:29*
+G04 Created by KiCad (PCBNEW (7.0.0)) date 2023-11-06 15:13:21*
 %MOMM*%
 %LPD*%
 G01*
