@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP AM26LV32EIRGYRG4
+D RS-422 Interface IC LoVltg Hi-Sp Quad Diff Line Drvr
+K
+F http://www.ti.com/lit/ds/symlink/am26lv32e.pdf?HQS=TI-null-null-mousermode-df-pf-null-wwe&ts=1591263421022
+$ENDCMP
+#
+#End Doc Library

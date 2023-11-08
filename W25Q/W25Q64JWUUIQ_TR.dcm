@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP W25Q64JWUUIQ_TR
+D SPIFLASH, 1.8V 64M-BIT, 4KB UNIFORM SECTOR
+K
+F https://www.macronix.com/Lists/ApplicationNote/Attachments/1997/AN0159V4-%20Recommended%20PCB%20Pad%20Layouts%20for%208-USON%20and%208-WSON%20Packages_2.pdf
+$ENDCMP
+#
+#End Doc Library

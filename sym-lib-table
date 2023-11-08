@@ -1,7 +1,6 @@
 (sym_lib_table
   (version 7)
-  (lib (name "DRV89x2")(type "KiCad")(uri "${KIPRJMOD}/DRV89x2.kicad_sym")(options "")(descr ""))
-  (lib (name "STSPIN958")(type "KiCad")(uri "${KIPRJMOD}/STSPIN958TR/STSPIN958TR.kicad_sym")(options "")(descr ""))
-  (lib (name "SiZ2xxDT")(type "KiCad")(uri "${KIPRJMOD}/PowerPair3x3/SIZ260DT-T1-GE3.kicad_sym")(options "")(descr ""))
   (lib (name "EPC")(type "KiCad")(uri "${KIPRJMOD}/EPC.kicad_sym")(options "")(descr ""))
+  (lib (name "W25Q")(type "KiCad")(uri "${KIPRJMOD}/W25Q/W25Q64JWUUIQ_TR.kicad_sym")(options "")(descr ""))
+  (lib (name "AM26LV32")(type "KiCad")(uri "${KIPRJMOD}/AM26LV32/AM26LV32EIRGYRG4.kicad_sym")(options "")(descr ""))
 )
