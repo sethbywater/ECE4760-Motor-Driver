@@ -185,6 +185,8 @@
     (stroke (width 0) (type solid)) (fill solid) (layer "F.Mask") (tstamp 8b6e46cd-e700-4b9d-bca1-473c4a5396d8))
   (fp_rect (start -2.5 -1.75) (end 2.5 1.75)
     (stroke (width 0.01) (type default)) (fill none) (layer "Cmts.User") (tstamp 7b8783d7-ad73-4e01-be99-be60d9c64952))
+  (fp_rect (start -3 -2.2) (end 3 2.2)
+    (stroke (width 0.05) (type default)) (fill none) (layer "Margin") (tstamp 44273d8e-44fc-4d8c-a828-a67b43b86a54))
   (pad "1" smd rect (at -2.425 -0.575 90) (size 0.245 0.795) (layers "F.Cu")
     (solder_mask_margin -0.1) (thermal_bridge_angle 45) (tstamp 4c0303e8-eda1-45bc-94d3-3d915175429c))
   (pad "2" smd rect (at -2.425 -0.075 90) (size 0.245 0.795) (layers "F.Cu")
