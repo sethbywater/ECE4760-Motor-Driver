@@ -1066,7 +1066,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 168.275 63.5 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp yes)
     (uuid 2b168ce5-d610-41fd-ba08-c815be1f3647)
     (property "Reference" "C55" (at 169.545 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1147,7 +1147,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 174.625 63.5 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp yes)
     (uuid 3e5a1b8a-c302-49ac-a9ca-e8026d96e9e3)
     (property "Reference" "C56" (at 175.895 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1407,7 +1407,7 @@
   )
 
   (symbol (lib_id "Device:C") (at 161.925 63.5 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
+    (in_bom yes) (on_board yes) (dnp yes)
     (uuid 70ecae19-6d19-46c1-8423-3a4d2cc2604f)
     (property "Reference" "C54" (at 163.195 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
@@ -1594,7 +1594,7 @@
   )
 
   (symbol (lib_id "Connector:TestPoint") (at 154.94 123.825 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a12ecbda-4569-4f6e-a3fe-95c176b535d8)
     (property "Reference" "TP1" (at 157.48 126.492 0)
       (effects (font (size 1.27 1.27)) (justify right))
