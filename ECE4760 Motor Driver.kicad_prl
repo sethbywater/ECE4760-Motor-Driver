@@ -15,7 +15,7 @@
       "zones": 0.6
     },
     "selection_filter": {
-      "dimensions": false,
+      "dimensions": true,
       "footprints": true,
       "graphics": true,
       "keepouts": true,
@@ -63,7 +63,7 @@
       39,
       40
     ],
-    "visible_layers": "000d180_80000005",
+    "visible_layers": "000d180_80000001",
     "zone_display_mode": 0
   },
   "meta": {
