@@ -330,6 +330,58 @@
         )
       )
     )
+    (symbol "power:+3V3" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+      (property "Reference" "#PWR" (at 0 -3.81 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Value" "+3V3" (at 0 3.556 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "global power" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Power symbol creates a global label with name \"+3V3\"" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "+3V3_0_1"
+        (polyline
+          (pts
+            (xy -0.762 1.27)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 0)
+            (xy 0 2.54)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (polyline
+          (pts
+            (xy 0 2.54)
+            (xy 0.762 1.27)
+          )
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "+3V3_1_1"
+        (pin power_in line (at 0 0 90) (length 0) hide
+          (name "+3V3" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "power:+5V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
@@ -827,14 +879,6 @@
     (uuid ff96cf9c-fb0b-449b-86e0-c4c689b235ae)
   )
 
-  (global_label "VREF" (shape input) (at 168.275 104.14 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 8f7731fc-fa06-4e03-a4e9-0be736d5a347)
-    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 175.777 104.14 0)
-      (effects (font (size 1.27 1.27)) (justify left) hide)
-    )
-  )
-
   (hierarchical_label "SW" (shape output) (at 165.1 95.25 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27) bold italic) (justify left))
     (uuid 47f6e38e-cafd-4bf3-bfed-48612329f918)
@@ -855,10 +899,10 @@
   (symbol (lib_id "Device:C") (at 165.1 107.95 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 008c5acb-e9fb-4e23-8324-ed6fd06fe33a)
-    (property "Reference" "C18" (at 168.91 107.315 0)
+    (property "Reference" "C20" (at 168.91 107.315 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "10n" (at 168.91 109.855 0)
+    (property "Value" "1n" (at 168.91 109.855 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 164.1348 104.14 0)
@@ -870,10 +914,10 @@
     (property "Comments" "" (at 165.1 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DigiKey" "490-4762-1-ND" (at 165.1 107.95 0)
+    (property "DigiKey" "490-GCM155R71H102KA37JCT-ND" (at 165.1 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 165.1 107.95 0)
+    (property "LCSC" "C1852263" (at 165.1 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6c7815d4-2df9-484e-ad92-93c73e1ca8fa))
@@ -881,16 +925,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C18") (unit 1)
+          (reference "C20") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C24") (unit 1)
+          (reference "C33") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C30") (unit 1)
+          (reference "C46") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C36") (unit 1)
+          (reference "C59") (unit 1)
         )
       )
     )
@@ -899,7 +943,7 @@
   (symbol (lib_id "power:GND") (at 165.1 113.665 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0ab88eeb-360b-4548-839e-9aee5437524a)
-    (property "Reference" "#PWR040" (at 165.1 120.015 0)
+    (property "Reference" "#PWR053" (at 165.1 120.015 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 165.1 118.745 0)
@@ -915,16 +959,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "#PWR040") (unit 1)
+          (reference "#PWR053") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "#PWR050") (unit 1)
+          (reference "#PWR061") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "#PWR058") (unit 1)
+          (reference "#PWR069") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "#PWR066") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
       )
     )
@@ -951,7 +995,7 @@
     (property "DigiKey" "311-4.7JRCT-ND" (at 149.225 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 149.225 85.09 0)
+    (property "LCSC" "C137862" (at 149.225 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 75b35d18-5eb4-4492-b507-5d43383e8e5d))
@@ -977,7 +1021,7 @@
   (symbol (lib_id "Device:C") (at 149.225 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1bfaed73-5471-448c-9aba-41fd27a51c79)
-    (property "Reference" "C40" (at 150.495 60.96 0)
+    (property "Reference" "C?" (at 150.495 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n, 100V, 0603, X7R" (at 149.225 57.785 90)
@@ -992,10 +1036,10 @@
     (property "Comments" "" (at 149.225 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DigiKey" "490-3285-1-ND" (at 149.225 63.5 0)
+    (property "DigiKey" "490-13420-1-ND" (at 149.225 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 149.225 63.5 0)
+    (property "LCSC" "C161117" (at 149.225 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 2f25ebf7-2ed6-49bf-863f-07f26ca02d3c))
@@ -1003,19 +1047,19 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86"
-          (reference "C40") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C40") (unit 1)
+          (reference "C11") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C44") (unit 1)
+          (reference "C24") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C48") (unit 1)
+          (reference "C37") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C52") (unit 1)
+          (reference "C50") (unit 1)
         )
       )
     )
@@ -1024,7 +1068,7 @@
   (symbol (lib_id "Device:C") (at 168.275 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 2b168ce5-d610-41fd-ba08-c815be1f3647)
-    (property "Reference" "C55" (at 169.545 60.96 0)
+    (property "Reference" "C?" (at 169.545 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u, 100V, 0805, X7R" (at 168.275 57.785 90)
@@ -1042,7 +1086,7 @@
     (property "DigiKey" "478-KAM21KR72A105KUCT-ND" (at 168.275 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 168.275 63.5 0)
+    (property "LCSC" "C5370002" (at 168.275 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 25595388-a3a4-4550-8ee8-99c2d0d70a4c))
@@ -1050,19 +1094,19 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86"
-          (reference "C55") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C55") (unit 1)
+          (reference "C14") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C58") (unit 1)
+          (reference "C27") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C61") (unit 1)
+          (reference "C40") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C64") (unit 1)
+          (reference "C53") (unit 1)
         )
       )
     )
@@ -1071,7 +1115,7 @@
   (symbol (lib_id "power:GND") (at 98.425 86.36 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 376c196a-5a8a-4bf2-ba54-870c7fb60bd4)
-    (property "Reference" "#PWR037" (at 98.425 92.71 0)
+    (property "Reference" "#PWR051" (at 98.425 92.71 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 98.425 91.44 0)
@@ -1087,16 +1131,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "#PWR037") (unit 1)
+          (reference "#PWR051") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "#PWR047") (unit 1)
+          (reference "#PWR059") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "#PWR055") (unit 1)
+          (reference "#PWR067") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "#PWR063") (unit 1)
+          (reference "#PWR075") (unit 1)
         )
       )
     )
@@ -1105,7 +1149,7 @@
   (symbol (lib_id "Device:C") (at 174.625 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 3e5a1b8a-c302-49ac-a9ca-e8026d96e9e3)
-    (property "Reference" "C56" (at 175.895 60.96 0)
+    (property "Reference" "C?" (at 175.895 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u, 100V, 0805, X7R" (at 174.625 57.785 90)
@@ -1123,7 +1167,7 @@
     (property "DigiKey" "478-KAM21KR72A105KUCT-ND" (at 174.625 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 174.625 63.5 0)
+    (property "LCSC" "C5370002" (at 174.625 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid b781e7ba-14b2-420a-8f96-00c3b780e63c))
@@ -1131,19 +1175,19 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86"
-          (reference "C56") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C56") (unit 1)
+          (reference "C15") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C59") (unit 1)
+          (reference "C28") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C62") (unit 1)
+          (reference "C41") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C65") (unit 1)
+          (reference "C54") (unit 1)
         )
       )
     )
@@ -1152,7 +1196,7 @@
   (symbol (lib_id "Device:C") (at 136.525 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 40c97c57-10a3-4923-bb75-ededa1534a1f)
-    (property "Reference" "C38" (at 137.795 60.96 0)
+    (property "Reference" "C?" (at 137.795 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n, 100V, 0603, X7R" (at 136.525 57.785 90)
@@ -1167,10 +1211,10 @@
     (property "Comments" "" (at 136.525 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DigiKey" "490-3285-1-ND" (at 136.525 63.5 0)
+    (property "DigiKey" "490-13420-1-ND" (at 136.525 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 136.525 63.5 0)
+    (property "LCSC" "C161117" (at 136.525 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 8bbbf25d-1d59-440a-8658-a2933029117b))
@@ -1178,19 +1222,53 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86"
-          (reference "C38") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C38") (unit 1)
+          (reference "C9") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C42") (unit 1)
+          (reference "C22") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C46") (unit 1)
+          (reference "C35") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C50") (unit 1)
+          (reference "C48") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "power:+3V3") (at 168.275 104.14 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no)
+    (uuid 4e7a401f-bf2e-4976-b0ea-76c70daf8563)
+    (property "Reference" "#PWR080" (at 164.465 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+3V3" (at 171.45 104.14 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 168.275 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (at 168.275 104.14 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 0609ea41-a929-4382-bb2c-c1a2191e1298))
+    (instances
+      (project "ECE4760 Motor Driver"
+        (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
+          (reference "#PWR080") (unit 1)
+        )
+        (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
+          (reference "#PWR081") (unit 1)
+        )
+        (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
+          (reference "#PWR082") (unit 1)
+        )
+        (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
+          (reference "#PWR083") (unit 1)
         )
       )
     )
@@ -1199,7 +1277,7 @@
   (symbol (lib_id "Device:C") (at 117.475 67.31 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 50428659-c81b-409f-838a-70373a39b64c)
-    (property "Reference" "C14" (at 120.65 66.04 0)
+    (property "Reference" "C16" (at 120.65 66.04 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1u" (at 120.65 68.58 0)
@@ -1217,7 +1295,7 @@
     (property "DigiKey" "490-GRM155Z71A105KE01JCT-ND" (at 117.475 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 117.475 67.31 0)
+    (property "LCSC" "C528974" (at 117.475 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid bb16d59f-5d5e-4839-bbab-e61a4c696533))
@@ -1225,16 +1303,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C14") (unit 1)
+          (reference "C16") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C20") (unit 1)
+          (reference "C29") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C26") (unit 1)
+          (reference "C42") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C32") (unit 1)
+          (reference "C55") (unit 1)
         )
       )
     )
@@ -1243,7 +1321,7 @@
   (symbol (lib_id "power:GND") (at 174.625 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 547e701b-2576-45cf-b96f-523d9b9a8bab)
-    (property "Reference" "#PWR026" (at 174.625 76.2 0)
+    (property "Reference" "#PWR049" (at 174.625 76.2 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 174.625 74.93 0)
@@ -1259,16 +1337,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR049") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR057") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "#PWR042") (unit 1)
+          (reference "#PWR065") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "#PWR043") (unit 1)
+          (reference "#PWR073") (unit 1)
         )
       )
     )
@@ -1277,7 +1355,7 @@
   (symbol (lib_id "Device:C") (at 104.775 85.09 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 644747a1-c0d6-4e67-9292-30bd1e6f8160)
-    (property "Reference" "C15" (at 104.775 79.375 90)
+    (property "Reference" "C17" (at 104.775 79.375 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "100n" (at 104.775 81.915 90)
@@ -1292,10 +1370,10 @@
     (property "Comments" "" (at 104.775 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DigiKey" "490-10700-1-ND" (at 104.775 85.09 0)
+    (property "DigiKey" "490-3261-1-ND" (at 104.775 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 104.775 85.09 0)
+    (property "LCSC" "C71629" (at 104.775 85.09 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5962fcfb-1c30-489d-a88c-007373856298))
@@ -1303,16 +1381,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C15") (unit 1)
+          (reference "C17") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C21") (unit 1)
+          (reference "C30") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C27") (unit 1)
+          (reference "C43") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C33") (unit 1)
+          (reference "C56") (unit 1)
         )
       )
     )
@@ -1321,10 +1399,10 @@
   (symbol (lib_id "Device:C") (at 149.225 90.17 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 6f5b30f6-9e6a-4262-9223-de8ac7d0ff74)
-    (property "Reference" "C16" (at 145.415 88.265 90)
+    (property "Reference" "C18" (at 145.415 88.265 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100n, 6V" (at 161.29 88.265 90)
+    (property "Value" "100n" (at 161.29 88.265 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Capacitor_SMD:C_0402_1005Metric" (at 153.035 89.2048 0)
@@ -1336,10 +1414,10 @@
     (property "Comments" "" (at 149.225 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DigiKey" "490-10700-1-ND" (at 149.225 90.17 0)
+    (property "DigiKey" "490-3261-1-ND" (at 149.225 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 149.225 90.17 0)
+    (property "LCSC" "C71629" (at 149.225 90.17 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e5abb749-be37-4aaf-987a-68147afb504b))
@@ -1347,16 +1425,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C16") (unit 1)
+          (reference "C18") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C22") (unit 1)
+          (reference "C31") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C28") (unit 1)
+          (reference "C44") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C34") (unit 1)
+          (reference "C57") (unit 1)
         )
       )
     )
@@ -1365,7 +1443,7 @@
   (symbol (lib_id "Device:C") (at 161.925 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 70ecae19-6d19-46c1-8423-3a4d2cc2604f)
-    (property "Reference" "C54" (at 163.195 60.96 0)
+    (property "Reference" "C?" (at 163.195 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1u, 100V, 0805, X7R" (at 161.925 57.785 90)
@@ -1383,7 +1461,7 @@
     (property "DigiKey" "478-KAM21KR72A105KUCT-ND" (at 161.925 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 161.925 63.5 0)
+    (property "LCSC" "C5370002" (at 161.925 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 545594f0-ea2b-4a77-8cd4-31ed07fcdb16))
@@ -1391,19 +1469,19 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86"
-          (reference "C54") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C54") (unit 1)
+          (reference "C13") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C57") (unit 1)
+          (reference "C26") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C60") (unit 1)
+          (reference "C39") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C63") (unit 1)
+          (reference "C52") (unit 1)
         )
       )
     )
@@ -1412,7 +1490,7 @@
   (symbol (lib_id "Device:C") (at 153.67 95.25 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp yes)
     (uuid 8bd5157e-4f5c-4161-9fee-d775db05688d)
-    (property "Reference" "C17" (at 149.86 93.98 90)
+    (property "Reference" "C19" (at 149.86 93.98 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "C" (at 157.48 93.98 90)
@@ -1435,16 +1513,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C17") (unit 1)
+          (reference "C19") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C23") (unit 1)
+          (reference "C32") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C29") (unit 1)
+          (reference "C45") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C35") (unit 1)
+          (reference "C58") (unit 1)
         )
       )
     )
@@ -1453,7 +1531,7 @@
   (symbol (lib_id "Device:C") (at 142.875 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9f561a60-8d48-4372-b45e-d1183bbec1c3)
-    (property "Reference" "C39" (at 144.145 60.96 0)
+    (property "Reference" "C?" (at 144.145 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n, 100V, 0603, X7R" (at 142.875 57.785 90)
@@ -1468,10 +1546,10 @@
     (property "Comments" "" (at 142.875 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DigiKey" "490-3285-1-ND" (at 142.875 63.5 0)
+    (property "DigiKey" "490-13420-1-ND" (at 142.875 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 142.875 63.5 0)
+    (property "LCSC" "C161117" (at 142.875 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid e5e3c364-fd82-4d34-bd0d-2e3aacb49580))
@@ -1479,19 +1557,19 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86"
-          (reference "C39") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C39") (unit 1)
+          (reference "C10") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C43") (unit 1)
+          (reference "C23") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C47") (unit 1)
+          (reference "C36") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C51") (unit 1)
+          (reference "C49") (unit 1)
         )
       )
     )
@@ -1543,7 +1621,7 @@
           (reference "U4") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "U6") (unit 1)
+          (reference "U5") (unit 1)
         )
       )
     )
@@ -1552,10 +1630,10 @@
   (symbol (lib_id "Connector:TestPoint") (at 154.94 123.825 180) (unit 1)
     (in_bom no) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a12ecbda-4569-4f6e-a3fe-95c176b535d8)
-    (property "Reference" "TP1" (at 157.48 126.492 0)
+    (property "Reference" "TP3" (at 157.48 126.492 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "TestPoint" (at 157.48 129.032 0)
+    (property "Value" "Sense" (at 157.48 129.032 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "TestPoint:TestPoint_Pad_D2.0mm" (at 149.86 123.825 0)
@@ -1574,16 +1652,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "TP1") (unit 1)
-        )
-        (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "TP2") (unit 1)
-        )
-        (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
           (reference "TP3") (unit 1)
         )
-        (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
+        (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
           (reference "TP4") (unit 1)
+        )
+        (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
+          (reference "TP5") (unit 1)
+        )
+        (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
+          (reference "TP6") (unit 1)
         )
       )
     )
@@ -1592,7 +1670,7 @@
   (symbol (lib_id "power:GND") (at 149.86 128.905 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid acc64a0e-06cb-48ee-b811-4856b8ed7712)
-    (property "Reference" "#PWR041" (at 149.86 135.255 0)
+    (property "Reference" "#PWR054" (at 149.86 135.255 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 149.86 133.985 0)
@@ -1608,16 +1686,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "#PWR041") (unit 1)
+          (reference "#PWR054") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "#PWR051") (unit 1)
+          (reference "#PWR062") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "#PWR059") (unit 1)
+          (reference "#PWR070") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "#PWR067") (unit 1)
+          (reference "#PWR078") (unit 1)
         )
       )
     )
@@ -1626,7 +1704,7 @@
   (symbol (lib_id "power:GND") (at 117.475 71.12 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b572cb23-758d-40df-835d-56dd049f0dee)
-    (property "Reference" "#PWR036" (at 117.475 77.47 0)
+    (property "Reference" "#PWR050" (at 117.475 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 117.475 76.2 0)
@@ -1642,16 +1720,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "#PWR036") (unit 1)
+          (reference "#PWR050") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "#PWR046") (unit 1)
+          (reference "#PWR058") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "#PWR054") (unit 1)
+          (reference "#PWR066") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "#PWR062") (unit 1)
+          (reference "#PWR074") (unit 1)
         )
       )
     )
@@ -1660,7 +1738,7 @@
   (symbol (lib_id "Device:C") (at 155.575 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid b808f271-17b5-4b8a-9ac2-47187441b1de)
-    (property "Reference" "C41" (at 156.845 60.96 0)
+    (property "Reference" "C?" (at 156.845 60.96 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100n, 100V, 0603, X7R" (at 155.575 57.785 90)
@@ -1675,10 +1753,10 @@
     (property "Comments" "" (at 155.575 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DigiKey" "490-3285-1-ND" (at 155.575 63.5 0)
+    (property "DigiKey" "490-13420-1-ND" (at 155.575 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 155.575 63.5 0)
+    (property "LCSC" "C161117" (at 155.575 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 55d7d0ec-88f4-48b1-8734-3255cf97749c))
@@ -1686,19 +1764,19 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86"
-          (reference "C41") (unit 1)
+          (reference "C?") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C41") (unit 1)
+          (reference "C12") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C45") (unit 1)
+          (reference "C25") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C49") (unit 1)
+          (reference "C38") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C53") (unit 1)
+          (reference "C51") (unit 1)
         )
       )
     )
@@ -1762,7 +1840,7 @@
   (symbol (lib_id "Device:C") (at 149.86 125.095 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c70d422b-d488-4621-b48b-ea2d4ed984ea)
-    (property "Reference" "C19" (at 146.05 124.46 0)
+    (property "Reference" "C21" (at 146.05 124.46 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "100n" (at 146.05 127 0)
@@ -1777,10 +1855,10 @@
     (property "Comments" "" (at 149.86 125.095 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "DigiKey" "490-10700-1-ND" (at 149.86 125.095 0)
+    (property "DigiKey" "490-3261-1-ND" (at 149.86 125.095 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 149.86 125.095 0)
+    (property "LCSC" "C71629" (at 149.86 125.095 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 09696e0e-6a40-45f1-98c2-3944574c21ca))
@@ -1788,16 +1866,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "C19") (unit 1)
+          (reference "C21") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "C25") (unit 1)
+          (reference "C34") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "C31") (unit 1)
+          (reference "C47") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "C37") (unit 1)
+          (reference "C60") (unit 1)
         )
       )
     )
@@ -1806,7 +1884,7 @@
   (symbol (lib_id "power:+5V") (at 124.46 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid ce90faaf-3227-4576-911d-492ef867a315)
-    (property "Reference" "#PWR034" (at 124.46 60.96 0)
+    (property "Reference" "#PWR047" (at 124.46 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 123.19 53.34 0)
@@ -1822,16 +1900,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "#PWR034") (unit 1)
+          (reference "#PWR047") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "#PWR044") (unit 1)
+          (reference "#PWR055") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "#PWR052") (unit 1)
+          (reference "#PWR063") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "#PWR060") (unit 1)
+          (reference "#PWR071") (unit 1)
         )
       )
     )
@@ -1840,7 +1918,7 @@
   (symbol (lib_id "power:Vdrive") (at 129.54 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e1b836ca-bed0-4f03-914f-31293d5800f6)
-    (property "Reference" "#PWR035" (at 124.46 60.96 0)
+    (property "Reference" "#PWR048" (at 124.46 60.96 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "Vdrive" (at 130.81 53.34 0)
@@ -1856,16 +1934,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "#PWR035") (unit 1)
+          (reference "#PWR048") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "#PWR045") (unit 1)
+          (reference "#PWR056") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "#PWR053") (unit 1)
+          (reference "#PWR064") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "#PWR061") (unit 1)
+          (reference "#PWR072") (unit 1)
         )
       )
     )
@@ -1874,7 +1952,7 @@
   (symbol (lib_id "power:GND") (at 127 111.125 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ed040de1-b32a-4c3f-bf59-5e8b5c5275f8)
-    (property "Reference" "#PWR039" (at 127 117.475 0)
+    (property "Reference" "#PWR052" (at 127 117.475 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 127 116.205 0)
@@ -1890,16 +1968,16 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/c589f15c-cfa0-468e-9e38-b6cac1cf329b"
-          (reference "#PWR039") (unit 1)
+          (reference "#PWR052") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/a080898b-4de6-4089-a4d2-49cdab3e2e2c"
-          (reference "#PWR049") (unit 1)
+          (reference "#PWR060") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/966e6479-76dc-4c15-80ee-30a40f91f040"
-          (reference "#PWR057") (unit 1)
+          (reference "#PWR068") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/7df790a7-70b3-4931-ac19-c23e231ae324"
-          (reference "#PWR065") (unit 1)
+          (reference "#PWR076") (unit 1)
         )
       )
     )
@@ -1926,7 +2004,7 @@
     (property "DigiKey" "311-4.7JRCT-ND" (at 107.95 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 107.95 73.66 0)
+    (property "LCSC" "C137862" (at 107.95 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid f6f3f27a-9d18-4388-ae61-2154f2c8f301))

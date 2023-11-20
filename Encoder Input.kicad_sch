@@ -161,10 +161,10 @@
   (symbol (lib_id "Device:R_US") (at 139.7 101.6 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aef9faf7-d0e9-4569-b8e4-fb6d700ba1f4)
-    (property "Reference" "R21" (at 139.7 96.52 90)
+    (property "Reference" "R33" (at 139.7 96.52 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1k, 0.1%" (at 139.7 99.06 90)
+    (property "Value" "1k, 1%" (at 139.7 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 139.954 100.584 90)
@@ -179,7 +179,7 @@
     (property "DigiKey" "311-1.00KLRCT-ND" (at 139.7 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 139.7 101.6 0)
+    (property "LCSC" "C2935237" (at 139.7 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 16e810b0-d3ad-4d9d-bdb4-9e7f431dc8f2))
@@ -187,19 +187,19 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/67f78701-eb6f-4714-bcc7-4eb1ac4068c0"
-          (reference "R21") (unit 1)
+          (reference "R33") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/dc22c45f-b7c4-46aa-99d2-c66429851554"
-          (reference "R24") (unit 1)
+          (reference "R36") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/b169a8bd-422e-4172-a58e-875b2cfce688"
-          (reference "R27") (unit 1)
+          (reference "R39") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/f96e87f7-a91c-406f-aa8b-cee643b81ae8"
-          (reference "R30") (unit 1)
+          (reference "R42") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/25eb3275-76e1-435c-9a84-78dbb9e1562e"
-          (reference "R33") (unit 1)
+          (reference "R45") (unit 1)
         )
       )
     )
@@ -208,10 +208,10 @@
   (symbol (lib_id "Device:R_US") (at 146.05 95.25 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bf3ddae5-c3dc-4da9-baf7-664e634af9f7)
-    (property "Reference" "R22" (at 147.955 93.98 0)
+    (property "Reference" "R32" (at 147.955 93.98 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "1k, 0.1%" (at 147.955 96.52 0)
+    (property "Value" "1k, 1%" (at 147.955 96.52 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 145.034 94.996 90)
@@ -226,7 +226,7 @@
     (property "DigiKey" "311-1.00KLRCT-ND" (at 146.05 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 146.05 95.25 0)
+    (property "LCSC" "C2935237" (at 146.05 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 93a7d2e5-6e73-479a-b76a-0605eb514341))
@@ -234,19 +234,19 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/67f78701-eb6f-4714-bcc7-4eb1ac4068c0"
-          (reference "R22") (unit 1)
+          (reference "R32") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/dc22c45f-b7c4-46aa-99d2-c66429851554"
-          (reference "R25") (unit 1)
+          (reference "R35") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/b169a8bd-422e-4172-a58e-875b2cfce688"
-          (reference "R28") (unit 1)
+          (reference "R38") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/f96e87f7-a91c-406f-aa8b-cee643b81ae8"
-          (reference "R31") (unit 1)
+          (reference "R41") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/25eb3275-76e1-435c-9a84-78dbb9e1562e"
-          (reference "R34") (unit 1)
+          (reference "R44") (unit 1)
         )
       )
     )
@@ -255,10 +255,10 @@
   (symbol (lib_id "Device:R_US") (at 139.7 88.9 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid c692dcfd-2413-4b6d-bf2e-e69bb550a54c)
-    (property "Reference" "R20" (at 139.7 83.82 90)
+    (property "Reference" "R31" (at 139.7 83.82 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1k, 0.1%" (at 139.7 86.36 90)
+    (property "Value" "1k, 1%" (at 139.7 86.36 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "Resistor_SMD:R_0402_1005Metric" (at 139.954 87.884 90)
@@ -273,7 +273,7 @@
     (property "DigiKey" "311-1.00KLRCT-ND" (at 139.7 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "" (at 139.7 88.9 0)
+    (property "LCSC" "C2935237" (at 139.7 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 6c4dfa7d-1c70-4fc4-82c1-2ac8c7da5587))
@@ -281,19 +281,19 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/67f78701-eb6f-4714-bcc7-4eb1ac4068c0"
-          (reference "R20") (unit 1)
+          (reference "R31") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/dc22c45f-b7c4-46aa-99d2-c66429851554"
-          (reference "R23") (unit 1)
+          (reference "R34") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/b169a8bd-422e-4172-a58e-875b2cfce688"
-          (reference "R26") (unit 1)
+          (reference "R37") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/f96e87f7-a91c-406f-aa8b-cee643b81ae8"
-          (reference "R29") (unit 1)
+          (reference "R40") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/25eb3275-76e1-435c-9a84-78dbb9e1562e"
-          (reference "R32") (unit 1)
+          (reference "R43") (unit 1)
         )
       )
     )
