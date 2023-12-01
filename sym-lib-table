@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "EPC")(type "KiCad")(uri "${KIPRJMOD}/EPC.kicad_sym")(options "")(descr ""))
   (lib (name "TPSM")(type "KiCad")(uri "${KIPRJMOD}/TPSM365R6.pretty/TPSM365R6.kicad_sym")(options "")(descr ""))
+  (lib (name "CSD87333Q3D")(type "KiCad")(uri "${KIPRJMOD}/CSD87333Q3D.pretty/CSD87333Q3D.kicad_sym")(options "")(descr ""))
 )
