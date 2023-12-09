@@ -45,7 +45,7 @@
         "silk_text_thickness": 0.15,
         "silk_text_upright": false,
         "zones": {
-          "min_clearance": 0.2032
+          "min_clearance": 0.25
         }
       },
       "diff_pair_dimensions": [
@@ -61,8 +61,7 @@
         "lib_footprint_mismatch|105632750|50926999|0f312280-9a58-45d7-b543-de1efc7b8d36|00000000-0000-0000-0000-000000000000",
         "lib_footprint_mismatch|105632750|59181999|b6b4c6fd-0c20-47ec-95ba-25ffd45d0db5|00000000-0000-0000-0000-000000000000",
         "lib_footprint_mismatch|105632750|67436999|78ed162d-d249-40f2-96dc-0a1d2f7857fc|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|114373750|67922500|81d0ab51-7be4-40ce-8248-6fd1dd8b0533|00000000-0000-0000-0000-000000000000",
-        "lib_footprint_mismatch|87668750|61000000|f0e5b782-59cc-4625-ae6a-af52329f976a|00000000-0000-0000-0000-000000000000"
+        "lib_footprint_mismatch|114373750|67922500|81d0ab51-7be4-40ce-8248-6fd1dd8b0533|00000000-0000-0000-0000-000000000000"
       ],
       "meta": {
         "version": 2
@@ -189,6 +188,7 @@
         0.508,
         0.762,
         1.016,
+        1.905,
         2.54
       ],
       "via_dimensions": [
@@ -551,10 +551,6 @@
       "Hall Sensor Input3"
     ],
     [
-      "719c509b-8ff9-4083-837d-a3024db7e531",
-      "Hall Sensor Input4"
-    ],
-    [
       "67f78701-eb6f-4714-bcc7-4eb1ac4068c0",
       "Encoder Input1"
     ],
@@ -567,14 +563,6 @@
       "Encoder Input3"
     ],
     [
-      "f96e87f7-a91c-406f-aa8b-cee643b81ae8",
-      "Encoder Input4"
-    ],
-    [
-      "25eb3275-76e1-435c-9a84-78dbb9e1562e",
-      "Encoder Input5"
-    ],
-    [
       "9895140f-573d-481d-a8a6-67e4fef141c0",
       "Limit Switch Input1"
     ],
@@ -585,10 +573,6 @@
     [
       "5fa307ae-0220-4647-a069-86a82689cac4",
       "Limit Switch Input3"
-    ],
-    [
-      "3c576bdf-2a9b-47b5-bf2f-8d65e4282c90",
-      "Limit Switch Input4"
     ]
   ],
   "text_variables": {}
