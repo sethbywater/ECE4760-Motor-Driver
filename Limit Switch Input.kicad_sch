@@ -289,7 +289,7 @@
   (symbol (lib_id "Device:R_US") (at 133.35 69.85 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 068ef48b-21fe-47f3-97cd-db9057163645)
-    (property "Reference" "R22" (at 135.89 69.215 0)
+    (property "Reference" "R30" (at 135.89 69.215 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "4k7" (at 135.89 71.755 0)
@@ -312,13 +312,13 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/299487ec-ee2d-43f4-ae82-35783d2e6b45"
-          (reference "R22") (unit 1)
+          (reference "R30") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/9895140f-573d-481d-a8a6-67e4fef141c0"
-          (reference "R20") (unit 1)
+          (reference "R28") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/5fa307ae-0220-4647-a069-86a82689cac4"
-          (reference "R24") (unit 1)
+          (reference "R32") (unit 1)
         )
       )
     )
@@ -327,7 +327,7 @@
   (symbol (lib_id "power:GND") (at 133.35 88.9 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8d6870bc-a8b9-4bbc-9376-e8d4186cf5f3)
-    (property "Reference" "#PWR010" (at 133.35 95.25 0)
+    (property "Reference" "#PWR078" (at 133.35 95.25 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 133.35 93.98 0)
@@ -343,13 +343,13 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/9895140f-573d-481d-a8a6-67e4fef141c0"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR078") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/299487ec-ee2d-43f4-ae82-35783d2e6b45"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR080") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/5fa307ae-0220-4647-a069-86a82689cac4"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR082") (unit 1)
         )
       )
     )
@@ -387,13 +387,13 @@
           (reference "R?") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/9895140f-573d-481d-a8a6-67e4fef141c0"
-          (reference "R21") (unit 1)
+          (reference "R29") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/299487ec-ee2d-43f4-ae82-35783d2e6b45"
-          (reference "R23") (unit 1)
+          (reference "R31") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/5fa307ae-0220-4647-a069-86a82689cac4"
-          (reference "R25") (unit 1)
+          (reference "R33") (unit 1)
         )
       )
     )
@@ -402,7 +402,7 @@
   (symbol (lib_id "power:+5V") (at 133.35 63.5 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b6406b20-cbf1-4428-94f2-cb27ed7d03be)
-    (property "Reference" "#PWR011" (at 133.35 67.31 0)
+    (property "Reference" "#PWR079" (at 133.35 67.31 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 133.35 59.69 0)
@@ -418,13 +418,13 @@
     (instances
       (project "ECE4760 Motor Driver"
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/299487ec-ee2d-43f4-ae82-35783d2e6b45"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR079") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/9895140f-573d-481d-a8a6-67e4fef141c0"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR077") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/5fa307ae-0220-4647-a069-86a82689cac4"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR081") (unit 1)
         )
       )
     )
@@ -462,13 +462,13 @@
           (reference "C?") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/9895140f-573d-481d-a8a6-67e4fef141c0"
-          (reference "C65") (unit 1)
+          (reference "C46") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/299487ec-ee2d-43f4-ae82-35783d2e6b45"
-          (reference "C66") (unit 1)
+          (reference "C47") (unit 1)
         )
         (path "/6b38a626-de8c-4b2d-bc76-3a02bc823a86/5fa307ae-0220-4647-a069-86a82689cac4"
-          (reference "C67") (unit 1)
+          (reference "C48") (unit 1)
         )
       )
     )
